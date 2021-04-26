@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
 }
 .container-nobackground{ 
     width: auto;
@@ -19,6 +20,10 @@ body{
     padding: 0px 2px 40px 2px;
     margin: 2px;    
 }
+.margin{
+    margin: 0 auto;
+    max-width: 1240px;
+}
 .cpotainer{
     display: flex;
 }
@@ -31,8 +36,8 @@ body{
     float:left;
     width: auto;
     height: auto;
-    background-color: rgb(71, 152, 172);
-    border: 3px solid rgb(71, 152, 172);
+    /* background-color: rgb(71, 152, 172); */
+    /* border: 3px solid rgb(71, 152, 172); */
     padding: 16px;
     
 }
@@ -117,14 +122,18 @@ a:hover {
     font-weight: bold;
 }
 .all-cotainer-footer{
-    background-color: rgba(221, 220, 220, 0.493);
-    border: 0;
-    margin: 0;
+    background-color: #272727;
+    color: #ffffff;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    
 }
-
 .con-foot-1{
-    margin:0px;
-    padding: 20px;
+    width: 370px;
+    display: inline-block;
+
 }
 .con-foot-2{
     padding: 0px 15px 10px 15px;
@@ -138,9 +147,10 @@ a:hover {
 .l-con-toot-2-hover:hover{
     color: #85b7c0;
 }
-.container-footor{
+.container-footer{
     height: 477px;
     width: auto;
     display: flex;
-    flex-wrap: wrap;
+}
+.style-social-mail{
 }
