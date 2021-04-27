@@ -4,7 +4,6 @@ body{
 }
 .container-nobackground{ 
     width: auto;
-    
 }
 .all-main-nenu{
     background: #62b5d2;
@@ -12,8 +11,8 @@ body{
     height: auto;
 }
 .main-menu{
-    
     background-color: #62b5d2;
+    color: #ffffff;
     font-size: 20px; /*размер шрифт*/
     height: 20px; /*высота*/
     width: auto; /*ширина*/
@@ -23,7 +22,6 @@ body{
 .margin{
     margin: 0 auto;
     max-width: 1240px;
-
 }
 .sections{
     float:left;
@@ -32,7 +30,23 @@ body{
     /* background-color: rgb(71, 152, 172); */
     /* border: 3px solid rgb(71, 152, 172); */
     display: block;
+}
+.cpotainer{
+    display: flex;
+}
+.product-cards{
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sections{
+    float:left;
+    width: auto;
+    height: auto;
+    /* background-color: rgb(71, 152, 172); */
+    /* border: 3px solid rgb(71, 152, 172); */
     padding: 16px;
+    text-align: center;
 }
 .cpotainer-margin{
     display: flex;
@@ -48,14 +62,14 @@ body{
 }
 .hover-cat:hover{
     color: #85b7c0;
-
 }
-a:hover {
+.sections-hover:hover{
     background: #fa8af1;
     border: 3px solid #fa8af1;
     color: rgb;
-    margin: 0px;
-    padding: 15px 15px 20px 15px;
+    margin: 2px 4px 2px 4px;
+    padding: 15px 15px 16px 15px;
+    text-align: center;
 }
 .product-cards{
     width: 1100px;
@@ -90,12 +104,10 @@ a:hover {
 }
 .all-discrip-text-product{
     background-color: #9EAAAC;
-
     margin: 4px 6px 4px 12px;
     width: 170px;
 }
 .text-product{
-    
     font-size: 14px;
 }
 .container-buttom{
@@ -112,7 +124,7 @@ a:hover {
     color: #ffffff
 }
 
-
+FOOTER
 .footer{
     padding: 30px 0px 0px 0px;
     background-color: #272727;
@@ -126,7 +138,6 @@ a:hover {
     display: flex;
     justify-content: center;
     margin: 0px;
-    
 }
 .container-footer{
     height: 477px;
@@ -155,4 +166,8 @@ a:hover {
 }
 /* .style-social-mail{
 } */
-
+.container-footer{
+    height: 477px;
+    width: auto;
+    display: flex;
+}
