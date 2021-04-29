@@ -20,7 +20,7 @@ body{
     margin: 2px;    
 }
 .margin{
-    margin: 0 auto;
+    margin: auto;
     max-width: 1240px;
 }
 .sections{
@@ -46,7 +46,7 @@ body{
     /* background-color: rgb(71, 152, 172); */
     /* border: 3px solid rgb(71, 152, 172); */
     padding: 16px;
-    text-align: center;
+    text-align: block;
 }
 .cpotainer-margin{
     display: flex;
@@ -68,13 +68,16 @@ body{
     border: 3px solid #fa8af1;
     color: rgb;
     margin: 2px 4px 2px 4px;
-    padding: 15px 15px 16px 15px;
-    text-align: center;
+    padding: 15px 15px 20px 15px;
 }
 .product-cards{
     width: 1100px;
+    
+}
+.cards-wrapper{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 25px    ;
 }
 .product-grid{
     /* float: left; */
@@ -85,10 +88,15 @@ body{
     height: 350px;
     border: 1px solid #9EAAAC;
     border-radius: 20px;
-    margin-left: 15px;
+    margin-left:9px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .pic-border-r{
     border-radius: 20px 20px 0px 0px;
+    width: 200px;
+    height: 170px;
 }
 .name-product{
     font-size: 16px;
@@ -103,7 +111,7 @@ body{
     font-weight: 900;
 }
 .all-discrip-text-product{
-    background-color: #9EAAAC;
+    background-color: #cfd1d1;
     margin: 4px 6px 4px 12px;
     width: 170px;
 }
@@ -143,6 +151,7 @@ FOOTER
     height: 477px;
     width: auto;
     display: flex;
+    margin: 20px;
 }
 .con-foot-1{
     width: 370px;
@@ -166,8 +175,3 @@ FOOTER
 }
 /* .style-social-mail{
 } */
-.container-footer{
-    height: 477px;
-    width: auto;
-    display: flex;
-}
