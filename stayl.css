@@ -6,7 +6,6 @@ body{
     width: auto;
 }
 .all-main-nenu{
-    background: #62b5d2;
     position:absolute;
     height: auto;
 }
@@ -14,22 +13,40 @@ body{
     background-color: #62b5d2;
     color: #ffffff;
     font-size: 20px; /*размер шрифт*/
-    height: 20px; /*высота*/
+    height: 60px; /*высота*/
     width: auto; /*ширина*/
-    padding: 0px 2px 40px 2px;
-    margin: 2px;    
+    display: block;
+  
+    
+    
 }
 .margin{
     margin: auto;
-    max-width: 1240px;
+    max-width: 1024px;
+      
+}
+.border-margin{
+    max-width: 760px;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 20px 80px */
 }
 .sections{
-    float:left;
-    width: 175.125px;
-    height: 23;
-    /* background-color: rgb(71, 152, 172); */
-    /* border: 3px solid rgb(71, 152, 172); */
-    display: block;
+    width: 180px;
+    text-align: center;
+    height: 60px;
+}
+.sections:hover{
+    background: #fa8af1;
+}
+.sections-hover{
+margin: 20px 0px;
+text-align: center;
+}
+a{
+    border: none;
+    color: white;
+    text-decoration: none;
 }
 .cpotainer{
     display: flex;
@@ -38,15 +55,6 @@ body{
     width: 1100px;
     display: flex;
     flex-wrap: wrap;
-}
-.sections{
-    float:left;
-    width: auto;
-    height: auto;
-    /* background-color: rgb(71, 152, 172); */
-    /* border: 3px solid rgb(71, 152, 172); */
-    padding: 16px;
-    text-align: block;
 }
 .cpotainer-margin{
     display: flex;
@@ -63,13 +71,7 @@ body{
 .hover-cat:hover{
     color: #85b7c0;
 }
-.sections-hover:hover{
-    background: #fa8af1;
-    border: 3px solid #fa8af1;
-    color: rgb;
-    margin: 2px 4px 2px 4px;
-    padding: 15px 15px 20px 15px;
-}
+
 .product-cards{
     width: 1100px;
     
@@ -173,5 +175,18 @@ FOOTER
 .con-foot-2{
     padding: 0px 15px 10px 15px;
 }
-/* .style-social-mail{
-} */
+
+
+/* toppings */
+
+
+.topping-grid{
+    border-right: none;
+    margin-bottom: 35px;
+    width: 380px;
+    height: 638px;
+    border: 1px solid #9EAAAC;
+    margin-left: 9px;
+    display: flex;
+    flex-wrap: wrap;
+}

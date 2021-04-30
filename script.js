@@ -102,3 +102,23 @@ for (let i = 0; i < cards.length; i++) {
 
     document.querySelector('.cards-wrapper').appendChild(new_card);
 }
+
+for (let i = 0; i < topping.length; i++) {
+    const new_topping = document.createElement('div');
+
+    new_topping.innerHTML = `
+    <div class="topping-grid">
+    <div class="pic-topping">
+        <img class="pic-border-topping" src="${topping[i].img}" alt="Italian pupa">
+    </div>
+    <div class="all-text-topping">
+        <div>
+            <div class="name-product">${topping[i].name}</div>
+            <div class="text-topping>${topping[i].price}</div>
+            <div class="structure-topping">${topping[i].structure}</div>
+        </div>
+    </div>
+</div>`;
+
+    document.querySelector('.cards-wrapper-topping').appendChild(new_topping);
+}
