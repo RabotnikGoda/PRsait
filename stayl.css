@@ -272,6 +272,34 @@ FOOTER
     font-weight: 700;
     font-size: 27px;
     width: 1057px;
-    
+}
 
+/* INFO */
+.container-info{
+    /* margin: auto; */
+    /* max-width: 1024px; */
+    width: 1170px;
+    display: flex;
+    justify-content:center;
+}
+.info-carts{
+/* display: block; */
+box-sizing:border-box
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+}
+.info-cart{
+    width: 250px;
+    height: 250px;
+    margin: 12px;
+    text-align: center;
+}
+.name-info{
+    color: #5e5c5c;
+    font-weight: 700;
+    font-size: 18px;
+}
+.text-info{
+    font-size: 14px;
 }
