@@ -1,13 +1,6 @@
 
 const cards = [
     {
-        img: 'images/img-proj/pupa.jpg',
-        name: 'Торт Ведьмино вариво',
-        price: '1560',
-        weight: '3',
-        wiews: '1300',
-    },
-    {
         img: 'images/img-proj/in16.jpg',
         name: 'Торт Ежовое счастье',
         price: '1230',
@@ -54,6 +47,13 @@ const cards = [
         price: '1460',
         weight: '3',
         wiews: '1560',
+    },
+    {
+        img: 'images/img-proj/pupa.jpg',
+        name: 'Торт Ведьмино вариво',
+        price: '1560',
+        weight: '3',
+        wiews: '1300',
     }, {
         img: 'images/img-proj/ng-shary.jpg',
         name: 'Торт Святящиеся шары',
