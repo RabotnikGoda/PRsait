@@ -133,7 +133,9 @@ a{
     margin-left:9px;
     display: flex;
     flex-wrap: wrap;
-
+}
+.product-grid:hover{
+    border: 1px solid #631a1a;
 }
 .pic-border-r{
     border-radius: 20px 20px 0px 0px;
@@ -276,18 +278,23 @@ FOOTER
 
 /* INFO */
 .container-info{
-    /* margin: auto; */
-    /* max-width: 1024px; */
-    width: 1170px;
-    display: flex;
-    justify-content:center;
+    /* display: flex;
+    justify-content:center; */
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .info-carts{
 /* display: block; */
-box-sizing:border-box
+    /* 
     margin-right: auto;
     margin-left: auto;
     padding: 0px;
+    display: flex;
+    max-width: 1024px; */
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 .info-cart{
     width: 250px;
