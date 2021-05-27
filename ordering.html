@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
     <link href="stayl.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <title>Каталог товаров</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
 </head>
+
 
 <body>
     <div class="container-nobackground">
@@ -59,76 +60,90 @@
             </div>
         </div>
     </div>
-
     </div>
-    <!-- <div class="all_main-nenu"></div> -->
-
-
-    </div>
-    <div class="cpotainer-margin">
-        <div class="cpotainer header">
-
-            <div class="box">
-                <div class="sing-info">
-                    <div class="sing-body">
-                        <div class="heading-sing">Всё включено</div>
-                        <div class="text-sing">В цену торта уже включено оформление и фигурки!</div>
-                        <!-- <img class="" src="images/main/g001.jpg"> -->
+    <div class="container">
+        <div class="top-container">
+            <div class="ordering">Оформление заказа</div>
+            <div class="basket-container">
+                <div class="checkout-inf-backet">
+                    <div class="checkout-heding">
+                        <span>Покупатель</span>
                     </div>
-                </div>
-                <div class="box-heding">
-                    <h1>Категории</h1>
-                </div>
-                <div class="box-content">
-                    <div class="box-category">
-                        <div class="box-category">
-                            <ul class="according">
-                                <li class="Cat-lis">
-                                    <div class="hover-cat">Детские торты</div>
-                                </li>
-                                <li class="Cat-lis-li">
-                                    <div class="hover-cat">Свадебные торты</div>
-                                </li>
-                                <li>
-                                <li class="Cat-lis-li">
-                                    <div class="hover-cat">Празднечные торты</div>
-                                </li>
-                                <li>
-                                    <div class="hover-cat">На день рождения</div>
-                                </li>
-                                <li>
-                                    <div class="hover-cat">Фототорты</div>
-                                </li>
-                                <li>
-                                    <div class="hover-cat">Корпоротивные торты</div>
-                                </li>
-                                <li class="Cat-lis-li">
-                                    <div class="hover-cat">Торты для родственников</div>
-                                </li>
-                                <li>
-                                    <div class="hover-cat">Диетические торты</div>
-                                </li>
-                                <li>
-                                    <div class="hover-cat">Новогодние торты</div>
-                                </li>
-                                <li>
-                                    <div class="hover-cat">Торт для женщины</div>
-                                </li>
-                                <li>
-                                    <div class="hover-cat">Торт для мужчины</div>
-                                </li>
-                                <li>
-                                    <div class="hover-cat">Торт на юбилей</div>
-                                </li>
-                            </ul>
+                    <div class="checkout-block-content">
+                        <div class="form-group">
+                            <div class="control-label">Email</div>
+                            <div class="input-line">
+                                <input type="email" class="input-backet">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="control-label">Имя</div>
+                            <div class="input-line">
+                                <input type="text" class="input-backet">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="control-label">Телефон</div>
+                            <div class="input-line">
+                                <input type="text" class="input-backet">
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="left-column">
+                    <div class="checkout-heding"><span>Способ доставки</span></div>
+                    <div class="checkout-block-content">
+                        <div class="radio">
+                        </div>
+                        <div class="radio">
+                            <input type="radio" checked="checked">
+                            <span class="checkmark">Доставка к точному времени - 1 300 р.</span>
+                        </div>
+
+                        <div class="radio">
+
+                            <input type="radio">
+                            <span class="checkmark">Доставка +100 км от от города - 1 800 р.</span>
+                        </div>
+
+                        <div class="radio">
+
+                            <input type="radio">
+                            <span class="checkmark">Доставка от 7 кг. до 20 км от от города - 1 000 р.</span>
+                        </div>
+
+                        <div class="radio">
+
+                            <input type="radio">
+                            <span class="checkmark">Доставка +20 км от от города - 650 р.</span>
+                        </div>
+                        <div class="radio">
+
+                            <input type="radio">
+                            <span class="checkmark">Доставка по городу - 0 р.</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="basket-list">
+                    <div class="table-responsive">
+                        <table class="basket-checkout">
+                            <thead>
+                                <tr>
+                                    <th class="image"> Фото</th>
+                                    <th class="name">Наименование товара</th>
+                                    <th class="quantity">Вес (кг)</th>
+                                    <th class="price">Цена за кг (шт)</th>
+                                    <th class="total">Итого</th>
+                                    <th class="remove">убрать из корзины</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
             </div>
 
-            <div class="product-cards">
-                <div class="cards-wrapper"></div>
-            </div>
         </div>
     </div>
     <footer>
@@ -203,9 +218,6 @@
         </div>
 
     </footer>
-    <script src="script.js"></script>
-    <!-- <script src="header.js"></script> -->
-
 </body>
 
 </html>
