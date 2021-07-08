@@ -123,4 +123,5 @@ for (let i = 0; i < cards.length; i++) {
 </div>`;
     document.querySelector('.cards-wrapper').appendChild(new_card);
 }
-
+var btn = document.getElementById('buton');
+var toggle = false;
