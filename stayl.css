@@ -244,6 +244,7 @@ a{
     margin-left:9px;
     display: flex;
     flex-wrap: wrap;
+    background-color: #ffffff;
 }
 .product-grid:hover{
     border: 1px solid #631a1a;
