@@ -35,15 +35,51 @@ function render() {
 }
 const myarray = data.cards;
 
-function defSort() {
-  cards.sort(function (a, b) {
-    return a.id - b.id;
-  });
-  console.log(myarray);
-}
-render();
+// function defSort() {
+//   cards.sort(function (a, b) {
+//     return a.id - b.id;
+//   });
+//   console.log(myarray);
+// }
+// render();
+// function boba() {
+//   if (document.getElementById("price").className == "test1") {
+//     $(".test1").click(function defSort() {
+//       cards.sort(function (a, b) {
+//         return a.disPrice - b.disPrice;
+//       });
+//       $("#price").removeClass("test1");
+//       $(this).addClass("test2");
 
-var btn = document.getElementById("buton");
-var toggle = false;
+//       console.log(myarray);
+//       render();
+//     });
+//   } else {
+//     $(".test2").click(function defSort2() {
+//       cards.sort(function (a, b) {
+//         return b.disPrice - a.disPrice;
+//       });
+//       $("#price").removeClass("test2");
+//       $(this).addClass("test1");
 
-let a = [cards];
+//       console.log(myarray);
+//       render();
+//     });
+//   }
+// }
+
+// $("#weight-button").click(function defSort() {
+//   cards.sort(function (a, b) {
+//     return a.weight - b.weight;
+//   });
+//   console.log(myarray);
+//   render();
+// });
+
+// $("#pop-button").click(function defSort() {
+//   cards.sort(function (a, b) {
+//     return b.wiews - a.wiews;
+//   });
+//   console.log(myarray);
+//   render();
+// });

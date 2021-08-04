@@ -4,7 +4,8 @@
 
 <head>
     <link href="stayl.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./datass.js"></script>
 
     <title>Каталог товаров</title>
@@ -143,10 +144,17 @@
             <div class="product-cards">
                 <div class="sorting">
                     <div class="sort-by">Сортировать по:</div>
-                    <div class="sorting-sections">
-                        <div class="sort-prices sort" id="testbutton">Цена</div>
-                        <div class="sort-prices sort">Вес</div>
-                        <div class="sort-prices sort">Популярность</div>
+                    <div class="sorting-sections" id="testButtons">
+                        <div class="sort-prices sort">
+                            <div class="prise-sort-min-max" id="price">Цена</div>
+                            </div>
+                        <div class="sort-prices sort" >
+                            <div class="weight-sort-min-max" id="weight">Вес</div>
+                        </div>
+                        <div class="sort-prices sort">
+                        <div class="wiews-sort-min-max" id="wiews">Популярность</div>
+                    </div>
+                        
                     </div>
                 </div>
                 <div class="cards-wrapper"></div>
@@ -226,6 +234,7 @@
 
     </footer>
     <script src="script.js"></script>
+    <script src="sort.js"></script>
     <!-- <script src="header.js"></script> -->
 
 </body>
