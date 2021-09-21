@@ -1,10 +1,11 @@
-var data = {
+const data = {
   id: "",
   cards: [
     {
       id: 1,
       img: "images/img-proj/in16.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт Ежовое счастье",
       disPrice: 990,
       price: "1230  р./кг",
@@ -15,6 +16,7 @@ var data = {
       id: 10,
       img: "images/img-proj/2504_large.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт Ягодные будни",
       disPrice: 1470,
       price: "",
@@ -22,9 +24,10 @@ var data = {
       wiews: 1560,
     },
     {
-      id: 3,
+      id: 8,
       img: "images/img-proj/265.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт Рождественские будни",
       disPrice: 991,
       price: "1200  р./кг",
@@ -35,6 +38,7 @@ var data = {
       id: 4,
       img: "images/img-proj/2512_large.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт Ягодный коктейль",
       disPrice: 1300,
       price: " ",
@@ -45,6 +49,7 @@ var data = {
       id: 5,
       img: "images/img-proj/2515_large.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт Ягодный рассвет",
       disPrice: 1390,
       price: " ",
@@ -55,6 +60,7 @@ var data = {
       id: 6,
       img: "images/img-proj/id100550.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт Ягоды и белый шоколад",
       disPrice: 1460,
       price: " ",
@@ -65,6 +71,7 @@ var data = {
       id: 7,
       img: "images/img-proj/id100554.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт Ягодный тандем",
       disPrice: 1340,
       price: "1460 р./кг",
@@ -72,9 +79,10 @@ var data = {
       wiews: 1560,
     },
     {
-      id: 8,
+      id: 3,
       img: "images/img-proj/pupa.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт Ведьмино вариво",
       disPrice: 1560,
       price: " ",
@@ -85,6 +93,7 @@ var data = {
       id: 9,
       img: "images/img-proj/ng-shary.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт Святящиеся шары",
       disPrice: 1200,
       price: "1450 р./кг",
@@ -95,6 +104,7 @@ var data = {
       id: 2,
       img: "images/img-proj/uini109.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт Ягодный фреш",
       disPrice: 1200,
       price: " ",
@@ -105,6 +115,7 @@ var data = {
       id: 11,
       img: "images/img-proj/untitled-1082.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт Янтарый осколок",
       disPrice: 1240,
       price: "1580 р./кг",
@@ -115,6 +126,7 @@ var data = {
       id: 12,
       img: "images/img-proj/untitled-2259.jpg",
       filling: [],
+      dietFilling: [],
       name: "Торт ягодный шик",
       disPrice: 1433,
       price: " ",
@@ -123,6 +135,58 @@ var data = {
     },
   ],
   filling: {
+    threeChocolates: {
+      fillingName: "Три шоколада",
+      description:
+        "Деликатная бисквитная основа в сочетании с муссом на основе трех шоколадов (белого, молочного и горького)",
+      fillingPrice: 90,
+      compound:
+        "Масло сливочное, Мука пшеничная, Разрыхлитель, Сахар, Сахар ванильный, Соль, Шоколад",
+      fillingImg: "images/topping/3_chokolate.jpg",
+    },
+    strawberryYogurt: {
+      fillingName: "Йогуртовая с Клубникой",
+      description:
+        "Любителям легких низкокалорийных десертов обязательно стоит попробовать нашу йогуртовую начинку! Ничего лишнего, только воздушный бисквит и легкий йогуртовый и клубничный муссы.",
+      fillingPrice: 60,
+      compound: "яйцо, сахар, ваниль, сгущеное молоко, сливки.",
+      fillingImg: "images/topping/iog-malina.jpg",
+    },
+    strawberryMint: {
+      fillingName: "Начинка Мята/Клубника",
+      description:
+        "Нежные, шоколадно-апельсиновые бисквиты в сочетании с прослойками Cream Chese с добавлением свежей мяты и сочной клубники.",
+      fillingPrice: 50,
+      compound:
+        "Состав: апельсин, яйцо, сахар, мука, какао, клубника, желатин, мята, Cream Chese.",
+      fillingImg: "images/topping/klyb-miata-apelsin.jpg",
+    },
+    raspberryCinnamon: {
+      fillingName: "Начинка Малина/Корица",
+      description:
+        "Сливочные бисквиты с прослойками Cream Cheese и добавлением свежей малины и корицы.",
+      fillingPrice: 50,
+      compound: "яйцо, сахар, мука, ваниль, Cream Chese, малина, корица.",
+      fillingImg: "images/topping/tv-v.jpg",
+    },
+    creamyRainbow: {
+      fillingName: "Радужная",
+      description:
+        "Разноцветные бисквитные коржи в сочетании с белоснежным муссом на основе сливочного сыра.",
+      fillingPrice: 50,
+      compound: "Сливочный сыр, творог, сахар, ваниль.",
+      fillingImg: "images/topping/raduzhnaya.jpg",
+    },
+    curdCherry: {
+      fillingName: "Начинка Творожно/Вишневая",
+      description:
+        "Легкий и воздушный творожно-сметанный мусс с прослойкой вишневого мусса и кусочками вишни.",
+      fillingPrice: 50,
+      compound: "творог, ваниль, пишнёвое варенье.",
+      fillingImg: "images/topping/tv-v.jpg",
+    },
+  },
+  dietFilling: {
     peach: {
       fillingName: "Начинка Персик",
       description:
@@ -177,74 +241,5 @@ var data = {
         "яйцо, сахар, мука, какао, желатин, клубника, дыня, ваниль, Cream Cheese.",
       fillingImg: "images/topping/3_chokolate.jpg",
     },
-    threeChocolates: {
-      fillingName: "Три шоколада",
-      description:
-        "Деликатная бисквитная основа в сочетании с муссом на основе трех шоколадов (белого, молочного и горького)",
-      fillingPrice: 90,
-      compound:
-        "Масло сливочное, Мука пшеничная, Разрыхлитель, Сахар, Сахар ванильный, Соль, Шоколад",
-      fillingImg: "images/topping/3_chokolate.jpg",
-    },
-    strawberryYogurt: {
-      fillingName: "Йогуртовая с Клубникой",
-      description:
-        "Любителям легких низкокалорийных десертов обязательно стоит попробовать нашу йогуртовую начинку! Ничего лишнего, только воздушный бисквит и легкий йогуртовый и клубничный муссы.",
-      fillingPrice: 60,
-      compound: "яйцо, сахар, ваниль, сгущеное молоко, сливки.",
-      fillingImg: "images/topping/iog-malina.jpg",
-    },
-    strawberryMint: {
-      fillingName: "Начинка Мята/Клубника",
-      description:
-        "Нежные, шоколадно-апельсиновые бисквиты в сочетании с прослойками Cream Chese с добавлением свежей мяты и сочной клубники.",
-      fillingPrice: 50,
-      compound:
-        "Состав: апельсин, яйцо, сахар, мука, какао, клубника, желатин, мята, Cream Chese.",
-      fillingImg: "images/topping/klyb-miata-apelsin.jpg",
-    },
-    raspberryCinnamon: {
-      fillingName: "Начинка Малина/Корица",
-      description:
-        "Сливочные бисквиты с прослойками Cream Cheese и добавлением свежей малины и корицы.",
-      fillingPrice: 50,
-      compound: "яйцо, сахар, мука, ваниль, Cream Chese, малина, корица.",
-      fillingImg: "",
-    },
-    creamyRainbow: {
-      fillingName: "Радужная",
-      description:
-        "Разноцветные бисквитные коржи в сочетании с белоснежным муссом на основе сливочного сыра.",
-      fillingPrice: 50,
-      compound: "Сливочный сыр, творог, сахар, ваниль.",
-      fillingImg: "images/topping/raduzhnaya.jpg",
-    },
-    curdCherry: {
-      fillingName: "Начинка Творожно/Вишневая",
-      description:
-        "Легкий и воздушный творожно-сметанный мусс с прослойкой вишневого мусса и кусочками вишни.",
-      fillingPrice: 50,
-      compound: "творог, ваниль, пишнёвое варенье.",
-      fillingImg: "images/topping/tv-v.jpg",
-    },
   },
 };
-
-// data = { id: "",
-//     "version": "0.0.16",
-//     "menu": [
-//         { id: "",
-//             "name": "Овощной",
-//             "description": "Соус и овощи на выбор",
-//             "image": "i/sandwiches/ovoshnoy.png",
-//             "price": 105,
-//             "category": "sandwiches",
-//             "market": "subway",
-//             "type": "multiple",
-//             "weight": 1,
-//             "components": { id: "",
-//                 "size": { id: "",},
-//                 "bread": "whit-italian",
-//                 "vegetable": [],
-//                 "sauce": [],
-// "filling": []
