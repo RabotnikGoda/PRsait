@@ -50,28 +50,28 @@ const dietTopping = [
   // },
 ];
 
-// for (let i = 0; i < dietTopping.length; i++) {
-//   const new_dietTopping = document.createElement("div");
+for (let i = 0; i < dietTopping.length; i++) {
+  const new_dietTopping = document.createElement("div");
 
-//   new_dietTopping.innerHTML = `
-//     <div class="topping-grid">
-//     <div class="pic-topping">
-//         <img class="pic-border-topping" src="${dietTopping[i].img}" alt="Italian DietPupa">
-//     </div>
-//     <div class="all-text-topping">
-//         <div>
-//             <div class="name-topping">${dietTopping[i].name}</div>
-//             <div class="text-topping">${dietTopping[i].text}</div>
+  new_dietTopping.innerHTML = `
+    <div class="topping-grid">
+    <div class="pic-topping">
+        <img class="pic-border-topping" src="${dietTopping[i].img}" alt="Italian DietPupa">
+    </div>
+    <div class="all-text-topping">
+        <div>
+            <div class="name-topping">${dietTopping[i].name}</div>
+            <div class="text-topping">${dietTopping[i].text}</div>
 
-//             <div class="structure-topping">${dietTopping[i].structure}</div>
-//         </div>
-//     </div>
-// </div>`;
+            <div class="structure-topping">${dietTopping[i].structure}</div>
+        </div>
+    </div>
+</div>`;
 
-//   document
-//     .querySelector(".cards-wrapper-diettopping")
-//     .appendChild(new_dietTopping);
-// }
+  document
+    .querySelector(".cards-wrapper-diettopping")
+    .appendChild(new_dietTopping);
+}
 const topping = [
   {
     img: "images/topping/3_chokolate.jpg",
@@ -113,48 +113,48 @@ const topping = [
     structure: "Состав:",
   },
 ];
-// for (let i = 0; i < topping.length; i++) {
-//   const new_topping = document.createElement("div");
+for (let i = 0; i < topping.length; i++) {
+  const new_topping = document.createElement("div");
 
-//   new_topping.innerHTML = `
-//     <div class="topping-grid">
-//     <div class="pic-topping">
-//         <img class="pic-border-topping" src="${topping[i].img}" alt="Italian Pupa">
-//     </div>
-//     <div class="all-text-topping">
-//         <div>
-//             <div class="name-topping">${topping[i].name}</div>
-//             <div class="text-topping">${topping[i].text}</div>
-
-//             <div class="structure-topping">${topping[i].structure}</div>
-//         </div>
-//     </div>
-// </div>`;
-
-//   document.querySelector(".cards-wrapper-topping").appendChild(new_topping);
-// }
-
-const cards = data.cards;
-function render() {
-  document.querySelector(".cards-wrapper-topping").innerHTML = "";
-
-  for (let i = 0; i < cards.length; ) {
-    const new_topping = document.createElement("div");
-
-    new_topping.innerHTML = `
+  new_topping.innerHTML = `
     <div class="topping-grid">
     <div class="pic-topping">
-        <img class="pic-border-topping" src="${cards[i].filling[i].fillingImg}" alt="Italian Pupa">
+        <img class="pic-border-topping" src="${topping[i].img}" alt="Italian Pupa">
     </div>
     <div class="all-text-topping">
         <div>
-            <div class="name-topping">${filling[i].fillingName}</div>
-            <div class="text-topping">${filling[i].description}</div>
+            <div class="name-topping">${topping[i].name}</div>
+            <div class="text-topping">${topping[i].text}</div>
 
-            <div class="structure-topping">${filling[i].compound}</div>
+            <div class="structure-topping">${topping[i].structure}</div>
         </div>
     </div>
 </div>`;
-    document.querySelector(".cards-wrapper-topping").appendChild(new_topping);
-  }
+
+  document.querySelector(".cards-wrapper-topping").appendChild(new_topping);
 }
+
+// const cards = data.cards;
+// function render() {
+//   document.querySelector(".cards-wrapper-topping").innerHTML = "";
+
+//   for (let i = 0; i < cards.length; ) {
+//     const new_topping = document.createElement("div");
+
+//     new_topping.innerHTML = `
+//     <div class="topping-grid">
+//     <div class="pic-topping">
+//         <img class="pic-border-topping" src="${cards[i].filling[i].fillingImg}" alt="Italian Pupa">
+//     </div>
+//     <div class="all-text-topping">
+//         <div>
+//             <div class="name-topping">${filling[i].fillingName}</div>
+//             <div class="text-topping">${filling[i].description}</div>
+
+//             <div class="structure-topping">${filling[i].compound}</div>
+//         </div>
+//     </div>
+// </div>`;
+//     document.querySelector(".cards-wrapper-topping").appendChild(new_topping);
+//   }
+// }
