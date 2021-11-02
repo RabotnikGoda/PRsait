@@ -36,21 +36,37 @@ const myarray = data.cards;
 $(document).ready(function ($) {
   $(".popup-open").click(function () {
     $(".popup-fade").fadeIn();
+    $("body").css({
+      overflow: "hidden",
+    });
+    $modal.show();
     return false;
   });
 
   $(".popup-close").click(function () {
     $(this).parents(".popup-fade").fadeOut();
+    $("body").css({
+      overflow: "hidden",
+      overflow: "",
+    });
     return false;
   });
   $(".popup-close").click(function () {
     $(this).parents(".popup-fade").fadeOut();
+    $("body").css({
+      overflow: "hidden",
+      overflow: "",
+    });
     return false;
   });
   $(document).keydown(function (e) {
     if (e.keyCode === 27) {
       e.stopPropagation();
       $(".popup-fade").fadeOut();
+      $("body").css({
+        overflow: "hidden",
+        overflow: "",
+      });
     }
   });
 
