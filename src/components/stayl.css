@@ -862,6 +862,10 @@ FOOTER .footer {
 
 /* всплывающее окна */
 
+.modal-content {
+  margin-top: 30px;
+  display: flex;
+}
 .popup-fade {
   display: none;
   position: fixed;
@@ -873,7 +877,7 @@ FOOTER .footer {
   align-items: center;
   justify-content: center;
 }
-top-left .popup-fade::before {
+.popup-fade::before {
   background: #000000;
   position: fixed;
   left: 0;
@@ -882,8 +886,13 @@ top-left .popup-fade::before {
   width: 100%;
   z-index: 9999;
 }
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 .popup {
-  position: fixed;
+  /* position: fixed;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -896,7 +905,14 @@ top-left .popup-fade::before {
   padding: 28px 40px 40px;
   border-radius: 8px;
   z-index: 3002;
-  opacity: 1;
+  opacity: 1; */
+  background-color: #fff;
+  width: 924px;
+  top: 20px;
+  padding: 28px 40px 40px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #b286b8;
 
   position: fixed;
   transform: translate(0, 0);
@@ -907,19 +923,13 @@ top-left .popup-fade::before {
   max-height: 100%;
   overflow-y: auto;
 }
-.modal-content {
-  display: flex;
-  margin-top: 30px;
+.popup::-webkit-scrollbar {
+  width: 0;
 }
 .modal-alignment {
   margin: auto;
   max-width: 1024px;
   width: 100%;
-}
-.popup-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
 }
 .hystmodal {
   top: 0;
@@ -976,4 +986,29 @@ body.modal-show {
   left: 0px;
   top: 0px;
   z-index: 3001;
+}
+
+#wrapper {
+  width: 50%;
+  margin: 10px;
+}
+#cart_content {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #060;
+}
+.item_box {
+  border: 1px solid #999;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.shopping_list {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+.shopping_list td,
+.shopping_list th {
+  padding: 10px;
+  border: 1px solid #aaaaaa;
 }

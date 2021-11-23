@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Тест</title>
 </head>
 <body>
     <link href="stayl.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-      
-    <div class="hystmodal" id="myModal" aria-hidden="true" >
-        <div class="hystmodal__wrap">
-            <div class="hystmodal__window" role="dialog" aria-modal="true" >
-                <button data-hystclose class="hystmodal__close">Close</button>  
-                <h1>Заголовок модального окна</h1>
-                <p>Текст модального окна ...</p>
-                <img src="img/photo.jpg" alt="Изображение" width="400" />
-                <p>Ещё текст модального окна ...</p>
-            </div>
+    
+    <div id="wrapper">
+        <div class="item_box product-grid">
+            <h3 class="item_title name-product">товар1</h3>
+            <p>Цена: <span class="item_price discont-price-product">20</span>$</p>
+            <button class="add_item" data-id="7">Добавить в корзину</button>
         </div>
-    </div>
-</body>
+        <div class="item_box product-grid">
+            <h3 class="item_title name-product">товар2</h3>
+            <p>Цена: <span class="item_price discont-price-product">100</span>$</p>
+            <button class="add_item" data-id="2">Добавить в корзину</button>
+        </div>
+        <div class="item_box product-grid">
+            <h3 class="item_title name-product">товар3</h3>
+            <p>Цена: <span class="item_price discont-price-product">1000</span>$</p>
+            <button class="add_item" data-id="5">Добавить в корзину</button>
+        </div>
+        <p><button id="checkout">Оформить заказ</button> &nbsp; <button id="clear_cart">Очистить корзину</button></p>
+        <div id="cart_content"></div>
+        </div>
+    </body>
 <script src="testjs.js"></script>
 </html>
